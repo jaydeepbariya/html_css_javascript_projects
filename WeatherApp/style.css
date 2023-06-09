@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+:root{
+    --colorDark1 : #112D4E;
+    --colorDark2 : #3F72AF;
+    --colorLight1 : #DBE2EF;
+    --colorLight2 : #F9F7F7;
+    
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: var(--colorLight2);
+    background-image: linear-gradient(160deg, var(--colorDark1) 0%, var(--colorDark2) 100%);
+}
+
+.main-heading{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.tab-container{
+    width: 50%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab{
+    cursor: pointer;
+    font-size: 0.875rem;
+    letter-spacing: 1.75px;
+    padding: 5px 8px;
+}
+
+.tab-container .current-tab{
+   background-color: rgb(219, 226,239,0.5);
+   border-radius: 4px;
+}
+
+.weather-container{
+    display: flex;
+    margin-block: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.grant-location-container{
+    display: none;
+}
+
+.grant-location-container.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 2rem;
+}
+
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+    margin-block: 2rem;
+}
+
+.subheading{
+    font-size: 15px;
+    font-weight: bold;
+    margin-block: 1rem;
+}
+
+.grant-location-container .btn{
+    width: 60%;
+    padding-block: 4px;
+    border: none;
+    background-color: var(--colorDark2);
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.loading-container{
+    display: none;
+}
+
+.loading-container.active{
+    display: flex;
+    justify-content: center;
+    margin-block: 2rem;
+}
+
+.loading-container p{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin: 1rem;
+}
+
+[data-countryIcon]{
+    width: 30px;
+    height: 30px;
+}
+
+.name p{
+    font-size: 2rem;
+}
+
+[data-weatherDesc]{
+    font-weight: 200;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+[data-weatherIcon]{
+    width: 70px;
+    height: 70px;
+}
+
+[data-temp]{
+    font-size: 3.0rem;
+}
+
+.parameter-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    width: 90%;
+}
+
+.parameter{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0rem 3rem; 
+  text-transform: uppercase;
+  column-gap: 4rem;
+  gap: 1rem;
+  width: 30%;
+  background-color: rgba(202, 174, 174, 0.5);
+  font-weight: 400;
+  padding-block: 1rem;
+}
+
+.parameter img{
+    width: 60px;
+    height: 60px;
+}
+
+.form-container{
+    display: none;
+}
+
+.form-container.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-block: 2rem;
+    column-gap: 1rem;
+}
+
+.form-container input{
+    width: 500px;
+    height: 40px;
+    padding: 1rem;
+    border: 1px black solid;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 10px;
+    background-color: rgba(238, 238, 238, 0.877);
+    color: black;
+    gap: 2rem;
+}
+
+.form-container button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #3F72AF;
+    border: none;
+}
+
+.form-container button:focus{
+    box-shadow: 0px 0px 5px white;
+}
+
+.form-container button:root{
+    box-shadow: 0px 0px 0px white;
+}
+
+.form-container button img{
+    width: 27px;
+    border-radius: 50%;
+}
+
+.error-container{
+    display: none;
+}
+
+.error-container.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.error-container img{
+    width: 200px;
+}
+
+.error-container p{
+    font-size: 20px;
+    font-weight: 500;
+}
+

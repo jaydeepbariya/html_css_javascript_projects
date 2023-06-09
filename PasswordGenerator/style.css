@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#container{
+    transition: all 0.2s;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 4rem;
+
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(125,125,255,1) 34%, rgba(0,212,255,1) 100%);
+}
+
+
+.display-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    background: rgb(2,0,36);
+    padding: 1rem;    
+}
+
+[data-displayPassword]{
+    width: 300px;
+    text-align: center;
+    font-size: 25px;
+    padding: 1rem;
+}
+
+#copyBtn{
+    width: 60px;
+    background-color: bisque;
+    border: none;
+}
+
+#copyBtn:hover{
+    box-shadow: 0px 0px 10px purple;
+}
+
+#copyBtn:focus{
+    box-shadow: 0px 0px 10px green;
+}
+
+#copyBtn:after{
+    box-shadow: 0px 0px 10px white;
+}
+
+.generate-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+    background: rgb(2,0,36);
+    padding: 1rem; 
+    margin-bottom: 20px;   
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.length-container p{
+    font-size: 20px;
+    color: white;
+}
+
+#length{
+    width: 40vw;
+}
+
+.checkboxes-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    color: white;
+    font-weight: 500;
+}
+
+.checkbox-list{
+    display:flex;
+    justify-content: baseline;
+    column-gap: 2rem;
+}
+
+input[type="checkbox"]{
+    width: 30px;
+    height: 20px;
+}
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.strength-container p{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+#generatePasswordBtn{
+    margin: 0 auto;
+    background-color: rgb(209, 228, 228);
+    width: 60%;
+    padding: 1rem 0 1rem 0;
+    font-size: 20px;
+    color: blue;
+
+}
+
+
+
+
+

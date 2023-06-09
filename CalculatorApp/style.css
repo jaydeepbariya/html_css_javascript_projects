@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#fefefe, #44bde1);
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color: transparent;
+}
+
+header h3{
+    font-size: 50px;
+    padding: 10px;
+
+}
+
+.display{
+    width: 100%;
+    text-align: center;
+}
+
+.display #disp{
+    width: 50%;
+    height: 60px;
+
+    align-self: center;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+.container .buttons{
+
+    width: max-content;
+    
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 60px 60px 60px 60px;
+    row-gap: 30px;
+    column-gap: 30px;
+
+    padding: 30px;
+    background-color: #c2e49b;
+
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.buttons .btn{
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fefefe;
+}
+
+.buttons .btn:nth-child(1){
+    background-color: cadetblue;
+}
+.buttons .btn:nth-child(1):hover{
+    background-color: #fefefe;
+}
+
+.btn:hover{
+    background-color: #b7b3e4;
+}
+
+.buttons .btn:nth-child(20){
+    background-color: cadetblue;
+}
+.buttons .btn:nth-child(20):hover{
+    background-color: #fefefe;
+}
