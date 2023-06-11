@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+:root {
+    --lm-bg: #f6f8ff;
+    --lm-bg-content: #fefefe;
+    --lm-text: #4b6a9b;
+    --lm-text-alt: #2b3442;
+    --lm-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+    --lm-shadow-inactive: 0px 16px 30px -10px rgba(0, 0, 0, 0.2);
+    --lm-icon-bg: brightness(100%);
+    /* Btn */
+    --btn: #0079ff;
+    --btn-hover: #60abff;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--lm-bg);
+}
+
+.content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 5%;
+    background-color: var(--lm-bg-content);
+    box-shadow: var(--lm-shadow);
+    margin-bottom: 2rem;
+
+}
+
+.heading{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;   
+    padding: 2rem;
+}
+
+.heading h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.heading .btn{
+    width: 10rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-box{
+    width: 70%;
+    display: flex;
+    justify-content:center; 
+    position: relative;
+    box-shadow: var(--lm-shadow);
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 1.5rem;
+    text-align: center;
+    margin: auto;
+}
+
+.search-box #search-input{
+    width: 50%;
+    padding: 0.75rem 0 0.75rem 0;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--lm-text);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+
+.search-box #search-btn{
+    width: 3.5rem;
+    height: 90%;
+    position: absolute;
+    top: 0.1rem;
+    right: 18rem;
+}
+
+.search-box button[type="submit"]{
+    background-color: var(--btn);
+    padding: 0 1rem 0 1rem;
+    margin-left: 50px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.search-box button[type="submit"]:hover{
+    background-color: var(--btn-hover);
+    outline: none;
+    padding: 0 1rem 0 1rem;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.profile{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 1rem 0 1rem 0;
+}
+
+.profile #profile-pic{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.profile .profile-info{
+    height: 100%;
+    text-align: left;
+    font-weight: 500;
+}
+
+.profile-info #name{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profile-info #github-link{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-info #join-date{
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+#info{
+    width: 40%;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: left;
+}
+
+.git-info{
+    width: 40%;
+    background-color: #e2bcbc;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+}
+
+.git-info .git-info-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.git-info .git-info-section .count{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.user-info{
+    margin: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+}
+
+.user-info-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dark-mode{
+    background-color: #2b3442;
+    color: #fefefe;
+}
+
+
+
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevDetective</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="heading">
+            <h1>DevDetective</h1>
+
+            <div class="btn">
+                <div id="dark-btn">
+                    <img src="./assets/moon1.jpg" alt="moon" width="20" />
+                    <p>Dark</p>
+                </div>
+                <div id="light-btn">
+                    <img src="./assets/sun.webp" alt="sun" width="20" />
+                    <p>Light</p>
+                </div>
+            </div>
+ 
+        </div>
+
+    <form class="search-box">
+            <input type="text" name="username" placeholder="Enter a Github Profile" id="search-input">
+            <button type="submit" id="searchBtn">Search</button>
+    </form>
+
+    <div class="content">
+
+        <div class="profile">
+            <div>
+                <img id="profile-pic" alt="profile pic" >
+            </div>
+    
+                <div class="profile-info">
+                        <p id="name"></p>
+                        <a id="github-link"></a>
+                        <p id="join-date"><span id="join-date-span"></span></p>
+            </div>
+        
+        </div>
+
+        <p id="info"></p>
+
+
+    <div class="git-info">
+        <div class="git-info-section">
+            <p>Repos</p>
+            <p class="count"></p>
+        </div>
+        <div class="git-info-section">
+            <p>Followers</p>
+            <p class="count"></p>
+        </div>
+        <div class="git-info-section">
+            <p>Following</p>
+            <p class="count"></p>
+        </div>
+    </div>
+
+    <div class="user-info">
+        <div class="user-info-section">
+            <img src="./assets/icons/location-icon.svg" alt="location-icon">
+            <p id="location"></p>
+        </div>
+        <div class="user-info-section">
+            <img src="./assets/icons/website-icon.svg" alt="website-icon">
+            <a id="website-link"></a>
+        </div>
+        <div class="user-info-section">
+            <img src="./assets/icons/twitter-icon.svg" alt="twitter-icon">
+            <p id="twitter"></p>
+        </div>
+        <div class="user-info-section">
+            <img src="./assets/icons/company-icon.svg" alt="company-icon">
+            <p id="company"></p>
+        </div>
+    </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
