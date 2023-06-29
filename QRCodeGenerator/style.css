@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root{
+    --gray: #999999;
+    --lightGray: #f2f2f2;
+    --darkGray : #595959;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: var(--gray);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.container h3{
+    padding: 30px 10px;
+    font-size: 20px;
+}
+
+.container input{
+    background: transparent;
+    outline: none;
+    border: none;
+    background-color: var(--lightGray);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+.container button{
+    background: transparent;
+    outline: none;
+    border: none;
+    background-color: var(--darkGray);
+    color: white;
+    padding: 5px 10px;
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#qrcode-img{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 0px;
+}
+
+#qrcode-img img{
+    margin: auto;
+    text-align: center;
+}
