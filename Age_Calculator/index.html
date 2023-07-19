@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="content">
+            <div class="header">
+                <h1>Age Calculator</h1>
+                <p>Enter Your Birth Date and Find Out How Old You Are !!</p>
+            </div>
+
+            <div class="input-date">
+                <form>
+                    <input type="number" id="day" placeholder="DD"/>
+                    <input type="number" id="month" placeholder="MM"/>
+                    <input type="number" id="year" placeholder="YYYY"/>
+
+                    <button type="submit" id="submitBtn">Calculate</button>
+                </form>
+            </div>
+
+            <div class="age-output">
+                <p><span id="age-year">0</span> Years</p>
+                <p><span id="age-month">0</span> Months</p>
+                <p><span id="age-date">0</span> Days</p>
+            </div>
+        </div>
+    
+</body>
+    <script src="script.js"></script>
+</html>
